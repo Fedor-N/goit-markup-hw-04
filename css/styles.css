@@ -6,6 +6,7 @@
     --color-light-bg: #F4F4FD;
     --color-button-bg: #404BBF;
     --color-primary: #434455;
+    --color-hover-two:#31D0AA;
 }
 
 .header {
@@ -451,7 +452,9 @@ body {
     border-right-width: 1px;
     border-bottom-width: 1px;
 }
-
+.card:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 /*========================icons===================*/
 .social-list {
     display: flex;
@@ -462,6 +465,7 @@ body {
 .social-list-icon {
     width: 16px;
     height: 16px;
+    fill: tomato;
 }
 
 .social-list-link {
@@ -473,6 +477,9 @@ body {
     border-radius: 50%;
     background-color: var(--color-brand);
 }
+.social-list-link:hover {
+    background: var(--color-button-bg);
+}
 
 .social-link-footer {
     display: flex;
@@ -483,7 +490,10 @@ body {
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
 }
-
+.social-link-footer:hover,
+.social-link-footer:focus {
+    background: var(--color-hover-two);
+}
 .social-list-footer {
     display: flex;
     justify-content: left;
@@ -511,13 +521,28 @@ body {
     border-radius: 4px;
     width: 168px;
     height: 88px;
+    display: block;
     /* display: flex; */
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
 }
 
 .customers-list {
     display: flex;
     justify-content: center;
     gap: 24px;
+}
+.customer-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.customer-item:hover,
+.customer-item:focus {
+    border: 1px solid var(--color-button-bg);
+}
+
+.customer-logo {
+    width: 168px;
+    height: 88px;
 }
