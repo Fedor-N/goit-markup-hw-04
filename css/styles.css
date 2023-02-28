@@ -546,3 +546,7 @@ body {
     width: 168px;
     height: 88px;
 }
+.customer-logo:hover,
+.customer-logo:focus {
+    fill:#404BBF;
+}
