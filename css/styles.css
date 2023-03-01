@@ -220,6 +220,8 @@ body {
     background: var(--color-button-bg);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: 1px  rgba(0, 0, 0, 0);
+
 }
 
 /* =============== features =============== */
@@ -254,8 +256,6 @@ body {
 .features-icon {
     width: 64px;
     height: 64px;
-    margin-top: 24px;
-    margin-bottom: 24px;
 }
 
 .features-icon-fon {
@@ -264,6 +264,8 @@ body {
     display: flex;
     justify-content: center;
     width: 264px;
+    height: 112px;
+    align-items: center;
     margin-bottom: 8px;
 }
 
@@ -463,8 +465,8 @@ body {
 }
 
 .social-list-icon {
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
     fill: #F4F4FD;
 }
 
@@ -477,7 +479,8 @@ body {
     border-radius: 50%;
     background-color: var(--color-brand);
 }
-.social-list-link:hover {
+.social-list-link:hover,
+.social-list-link:focus {
     background: var(--color-button-bg);
 }
 
@@ -517,14 +520,9 @@ body {
 }
 
 .customer-item {
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
+    
     width: 168px;
     height: 88px;
-    display: block;
-    /* display: flex; */
-    /* display: flex;
-    justify-content: center; */
 }
 
 .customers-list {
@@ -536,18 +534,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid #8E8F99;
+        border-radius: 4px;
 }
-.customer-item:hover,
-.customer-item:focus {
+.customer-link:hover,
+.customer-link:focus {
     border: 1px solid var(--color-button-bg);
+    fill:var(--color-button-bg);
 }
 
 .customer-logo {
     width: 168px;
     height: 88px;
     fill: #8E8F99;
-}
-.customer-logo:hover,
-.customer-logo:focus {
-    fill:#404BBF;
 }
