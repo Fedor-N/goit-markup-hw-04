@@ -416,7 +416,7 @@ body {
     background: var(--color-button-bg);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.09), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    border: 1px solid var(--color-light-bg);
+    border: 1px solid var(--color-button-bg);
 }
 
 .filter-title {
@@ -465,11 +465,15 @@ body {
 }
 
 .social-list-icon {
+    width: 16px;
+    height: 16px;
+    fill: #F4F4FD;
+}
+.social-list-icon-footer {
     width: 24px;
     height: 24px;
     fill: #F4F4FD;
 }
-
 .social-list-link {
     display: flex;
     justify-content: center;
@@ -540,9 +544,11 @@ body {
 .customer-link:hover,
 .customer-link:focus {
     border: 1px solid var(--color-button-bg);
-    fill:var(--color-button-bg);
 }
-
+.customer-link:hover .customer-logo,
+.customer-link:focus .customer-logo{
+    fill: var(--color-button-bg);
+}
 .customer-logo {
     width: 168px;
     height: 88px;
