@@ -180,6 +180,7 @@ body {
 }
 .hero-button {
         color: var(--color-light);
+        border: none;
         font-size: 16px;
         font-weight: 500;
         font-family: 'Roboto',sans-serif;
@@ -401,7 +402,7 @@ body {
         height: 100%;
         fill: var(--color-light-bg);
         border-radius: 50%;
-        background: rgba(255, 255, 255, 0.1);
+        background: var(--color-brand);
         transition-property: background-color;
         transition-duration: 250ms;
         transition-timing-function: var(--transition)
@@ -469,9 +470,10 @@ body {
 }
 .link-portfolio:hover,
 .link-portfolio:focus {
+        display: block;
         transition-property: color;
         transition-duration: 250ms;
-        transition-timing-function: var(--transition); 
+        transition-timing-function: var(--transition);
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .cards {
